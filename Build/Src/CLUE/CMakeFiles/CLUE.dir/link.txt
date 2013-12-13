@@ -1,0 +1,2 @@
+/usr/bin/ar cr libCLUE.a  CMakeFiles/CLUE.dir/Context.o CMakeFiles/CLUE.dir/Error.o
+/usr/bin/ranlib libCLUE.a

@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/arno/Documents/CLUE/Src/CLUE/Common.h
+CL/cl.h
+-
+string
+-
+
+/home/arno/Documents/CLUE/Src/CLUE/Context.cpp
+Context.h
+/home/arno/Documents/CLUE/Src/CLUE/Context.h
+Error.h
+/home/arno/Documents/CLUE/Src/CLUE/Error.h
+
+/home/arno/Documents/CLUE/Src/CLUE/Context.h
+Common.h
+/home/arno/Documents/CLUE/Src/CLUE/Common.h
+
+/home/arno/Documents/CLUE/Src/CLUE/Error.h
+Common.h
+/home/arno/Documents/CLUE/Src/CLUE/Common.h
+

@@ -1,0 +1,4 @@
+/usr/lib/libCLUE.a
+/usr/include/CLUE/Error.h
+/usr/include/CLUE/Common.h
+/usr/include/CLUE/Context.h
