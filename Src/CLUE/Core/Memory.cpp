@@ -42,6 +42,21 @@ void CLUEMemoryUploadHostData(cl_mem mem, size_t size, void* hostPtr)
 	CLUE_CHECK_CL_ERROR(err, "Failed uploading data.") 
 }
 //-----------------------------------------------------------------------------
+void CLUEMemoryMemset(cl_mem mem, cl_char value, size_t size)
+{
+//	cl_int err = clEnqueueFillBuffer(
+//			CLUEContextGetCLCommandQueue(),
+//			mem,
+//			&value,
+//			sizeof(cl_char),
+//			0,
+//			size,
+//			NULL,
+//			NULL,
+//			NULL	
+//		);
+}
+//-----------------------------------------------------------------------------
 void CLUEMemoryCopyToHostData(cl_mem mem, size_t size, void* hostPtr)
 {
 	cl_int err = clEnqueueReadBuffer(

@@ -1,4 +1,7 @@
 /usr/lib/libCLUE.a
-/usr/include/CLUE/Error.h
-/usr/include/CLUE/Common.h
-/usr/include/CLUE/Context.h
+/usr/include/CLUE/Core/Error.h
+/usr/include/CLUE/Core/Common.h
+/usr/include/CLUE/Core/Program.h
+/usr/include/CLUE/Core/Context.h
+/usr/include/CLUE/Core/Memory.h
+/usr/include/CLUE/Histogram/Histogram64.h

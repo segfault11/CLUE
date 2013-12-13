@@ -35,6 +35,8 @@ void CLUEMemoryUploadHostData(cl_mem mem, size_t size, void* hostPtr);
 /// \param hostPtr Pointer to the data to be copied to.
 void CLUEMemoryCopyToHostData(cl_mem mem, size_t size, void* hostPtr);
 
+void CLUEMemoryMemset(cl_mem mem, cl_char value, size_t size);
+
 /// Destroys OpenCL memory.
 void CLUEMemoryDestroy(cl_mem mem);
 

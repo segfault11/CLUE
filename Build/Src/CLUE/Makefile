@@ -151,64 +151,94 @@ CLUE/fast:
 .PHONY : CLUE/fast
 
 # target to build an object file
-Context.o:
-	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Context.o
-.PHONY : Context.o
+Core/Common.o:
+	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Core/Common.o
+.PHONY : Core/Common.o
 
 # target to preprocess a source file
-Context.i:
-	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Context.i
-.PHONY : Context.i
+Core/Common.i:
+	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Core/Common.i
+.PHONY : Core/Common.i
 
 # target to generate assembly for a file
-Context.s:
-	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Context.s
-.PHONY : Context.s
+Core/Common.s:
+	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Core/Common.s
+.PHONY : Core/Common.s
 
 # target to build an object file
-Error.o:
-	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Error.o
-.PHONY : Error.o
+Core/Context.o:
+	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Core/Context.o
+.PHONY : Core/Context.o
 
 # target to preprocess a source file
-Error.i:
-	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Error.i
-.PHONY : Error.i
+Core/Context.i:
+	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Core/Context.i
+.PHONY : Core/Context.i
 
 # target to generate assembly for a file
-Error.s:
-	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Error.s
-.PHONY : Error.s
+Core/Context.s:
+	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Core/Context.s
+.PHONY : Core/Context.s
 
 # target to build an object file
-Memory.o:
-	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Memory.o
-.PHONY : Memory.o
+Core/Error.o:
+	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Core/Error.o
+.PHONY : Core/Error.o
 
 # target to preprocess a source file
-Memory.i:
-	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Memory.i
-.PHONY : Memory.i
+Core/Error.i:
+	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Core/Error.i
+.PHONY : Core/Error.i
 
 # target to generate assembly for a file
-Memory.s:
-	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Memory.s
-.PHONY : Memory.s
+Core/Error.s:
+	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Core/Error.s
+.PHONY : Core/Error.s
 
 # target to build an object file
-Program.o:
-	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Program.o
-.PHONY : Program.o
+Core/Memory.o:
+	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Core/Memory.o
+.PHONY : Core/Memory.o
 
 # target to preprocess a source file
-Program.i:
-	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Program.i
-.PHONY : Program.i
+Core/Memory.i:
+	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Core/Memory.i
+.PHONY : Core/Memory.i
 
 # target to generate assembly for a file
-Program.s:
-	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Program.s
-.PHONY : Program.s
+Core/Memory.s:
+	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Core/Memory.s
+.PHONY : Core/Memory.s
+
+# target to build an object file
+Core/Program.o:
+	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Core/Program.o
+.PHONY : Core/Program.o
+
+# target to preprocess a source file
+Core/Program.i:
+	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Core/Program.i
+.PHONY : Core/Program.i
+
+# target to generate assembly for a file
+Core/Program.s:
+	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Core/Program.s
+.PHONY : Core/Program.s
+
+# target to build an object file
+Histogram/Histogram64.o:
+	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Histogram/Histogram64.o
+.PHONY : Histogram/Histogram64.o
+
+# target to preprocess a source file
+Histogram/Histogram64.i:
+	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Histogram/Histogram64.i
+.PHONY : Histogram/Histogram64.i
+
+# target to generate assembly for a file
+Histogram/Histogram64.s:
+	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Histogram/Histogram64.s
+.PHONY : Histogram/Histogram64.s
 
 # Help Target
 help:
@@ -223,18 +253,24 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... Context.o"
-	@echo "... Context.i"
-	@echo "... Context.s"
-	@echo "... Error.o"
-	@echo "... Error.i"
-	@echo "... Error.s"
-	@echo "... Memory.o"
-	@echo "... Memory.i"
-	@echo "... Memory.s"
-	@echo "... Program.o"
-	@echo "... Program.i"
-	@echo "... Program.s"
+	@echo "... Core/Common.o"
+	@echo "... Core/Common.i"
+	@echo "... Core/Common.s"
+	@echo "... Core/Context.o"
+	@echo "... Core/Context.i"
+	@echo "... Core/Context.s"
+	@echo "... Core/Error.o"
+	@echo "... Core/Error.i"
+	@echo "... Core/Error.s"
+	@echo "... Core/Memory.o"
+	@echo "... Core/Memory.i"
+	@echo "... Core/Memory.s"
+	@echo "... Core/Program.o"
+	@echo "... Core/Program.i"
+	@echo "... Core/Program.s"
+	@echo "... Histogram/Histogram64.o"
+	@echo "... Histogram/Histogram64.i"
+	@echo "... Histogram/Histogram64.s"
 .PHONY : help
 
 

@@ -19,4 +19,7 @@ cl_device_id CLUEContextGetDevice();
 /// Destroys the CLUE context.
 void CLUEContextDestroy();
 
+/// Dumps information about the context to the console.
+void CLUEContextDump();
+
 #endif /* end of include guard: CONTEXT_H */

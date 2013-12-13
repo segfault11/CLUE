@@ -1,8 +1,10 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/CLUE.dir/Memory.o"
-  "CMakeFiles/CLUE.dir/Context.o"
-  "CMakeFiles/CLUE.dir/Error.o"
-  "CMakeFiles/CLUE.dir/Program.o"
+  "CMakeFiles/CLUE.dir/Core/Common.o"
+  "CMakeFiles/CLUE.dir/Core/Memory.o"
+  "CMakeFiles/CLUE.dir/Core/Context.o"
+  "CMakeFiles/CLUE.dir/Core/Error.o"
+  "CMakeFiles/CLUE.dir/Core/Program.o"
+  "CMakeFiles/CLUE.dir/Histogram/Histogram64.o"
   "libCLUE.pdb"
   "libCLUE.a"
 )

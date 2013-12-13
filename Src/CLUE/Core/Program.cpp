@@ -1,4 +1,5 @@
 //-----------------------------------------------------------------------------
+#include <iostream>
 #include "Program.h"
 #include "Context.h"
 #include "Error.h"
@@ -16,7 +17,9 @@ cl_program CLUEProgramCreateWithSource(cl_uint count, const char** strings)
 
 	CLUE_CHECK_CL_ERROR(err, "Could not create program.");
 	
-	err = clBuildProgram(program, 0, NULL, NULL, NULL, NULL);
+	cl_device_id id = CLUEContextGetDevice();
+
+	err = clBuildProgram(program, 1, &id, NULL, NULL, NULL);
 	
 	if (err != CL_SUCCESS) 
 	{
@@ -54,11 +57,9 @@ void CLUEProgramDestroy(cl_program program)
 //-----------------------------------------------------------------------------
 cl_kernel CLUEKernelCreate(cl_program program, const char* name)
 {
-	cl_kernel kernel;
-	cl_int err;	
-
-	clCreateKernel(program, name, &err);
-
+	cl_int err;
+	
+ 	cl_kernel kernel = clCreateKernel(program, name, &err);
 	CLUE_CHECK_CL_ERROR(err, "Could not create kernel");
 
 	return kernel;
@@ -95,6 +96,23 @@ void CLUEKernelEnqueue(
 		NULL, 
 		NULL
 	);
+}
+//-----------------------------------------------------------------------------
+size_t CLUEKernelGetWorkGroupSize(cl_kernel kernel)
+{
+	size_t size;
+	cl_int err = clGetKernelWorkGroupInfo(
+			kernel, 
+			CLUEContextGetDevice(),
+			CL_KERNEL_WORK_GROUP_SIZE,
+			sizeof(size_t),
+			&size,
+			NULL
+		);
+	
+	CLUE_CHECK_CL_ERROR(err, "Could not get work group size.")
+
+	return size;
 }
 //-----------------------------------------------------------------------------
 void CLUEKernelDestroy(cl_kernel kernel)

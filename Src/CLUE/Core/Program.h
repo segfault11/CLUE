@@ -14,7 +14,6 @@ cl_program CLUEProgramCreateWithSource(cl_uint count, const char** strings);
 /// Destroys an OpenCL program.
 void CLUEProgramDestroy(cl_program program);
 
-
 /// Create a kernel from an OpenCL program
 ///
 /// \param program OpenCL program to create the kernel from.
@@ -42,7 +41,11 @@ void CLUEKernelEnqueue(
 	const size_t* localWorkSize
 );
 
+/// Returns the size of a work group for a kernel.
+size_t CLUEKernelGetWorkGroupSize(cl_kernel kernel);
+
 /// Destroys a kernel.
 void CLUEKernelDestroy(cl_kernel kernel);
+
 
 #endif /* end of include guard: PROGRAM_H */

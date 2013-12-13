@@ -15,7 +15,9 @@ void CLUEErrorReport(
 	std::cout << "\tFUNCTION: " << function;	
 	std::cout << "\tLINE: " << line;	
 	std::cout << "\nMessage:\n\t" << message; 
-	std::cout << "\nCode:\n\t" << err << std::endl; 
+	std::cout << "\nCode:\n\t" << err;
+	std::cout << "\nCL Error String:\n\t" << CLUEErrorToString(err) << std::endl;
+
 	exit(0);
 }
 //-----------------------------------------------------------------------------

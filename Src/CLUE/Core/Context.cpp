@@ -1,4 +1,5 @@
 //-----------------------------------------------------------------------------
+#include <iostream>
 #include "Context.h"
 #include "Error.h"
 //-----------------------------------------------------------------------------
@@ -13,7 +14,8 @@ void CLUEContextCreateWithGPU()
 {
 	if (isInitialized) 
 	{
-	    CLUEContextDestroy();
+		CLUE_ERROR(0, "Context already initialized")
+		return;
 	}
 
 	isInitialized = false;
@@ -73,3 +75,16 @@ cl_device_id CLUEContextGetDevice()
 	return deviceID;
 }
 //-----------------------------------------------------------------------------
+void CLUEContextDump()
+{
+	CHECK_INITIALIZED
+
+	char name[1024];
+
+	clGetDeviceInfo(deviceID, CL_DEVICE_NAME, sizeof(name), name, NULL);
+	std::cout << "CL_DEVICE_NAME: " << name << std::endl;
+	clGetDeviceInfo(deviceID, CL_DEVICE_VERSION, sizeof(name), name, NULL);
+	std::cout << "CL_DEVICE_VERSION: " << name << std::endl;
+}
+//-----------------------------------------------------------------------------
+
