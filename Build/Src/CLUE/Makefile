@@ -180,6 +180,21 @@ Error.s:
 	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Error.s
 .PHONY : Error.s
 
+# target to build an object file
+Memory.o:
+	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Memory.o
+.PHONY : Memory.o
+
+# target to preprocess a source file
+Memory.i:
+	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Memory.i
+.PHONY : Memory.i
+
+# target to generate assembly for a file
+Memory.s:
+	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Memory.s
+.PHONY : Memory.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -199,6 +214,9 @@ help:
 	@echo "... Error.o"
 	@echo "... Error.i"
 	@echo "... Error.s"
+	@echo "... Memory.o"
+	@echo "... Memory.i"
+	@echo "... Memory.s"
 .PHONY : help
 
 

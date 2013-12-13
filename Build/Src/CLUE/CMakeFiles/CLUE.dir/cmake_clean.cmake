@@ -1,4 +1,5 @@
 FILE(REMOVE_RECURSE
+  "CMakeFiles/CLUE.dir/Memory.o"
   "CMakeFiles/CLUE.dir/Context.o"
   "CMakeFiles/CLUE.dir/Error.o"
   "libCLUE.pdb"

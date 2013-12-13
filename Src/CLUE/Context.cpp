@@ -5,9 +5,19 @@
 static cl_device_id deviceID;
 static cl_context context;
 static cl_command_queue commands;
+static bool isInitialized = false;
+//-----------------------------------------------------------------------------
+#define CHECK_INITIALIZED if (!isInitialized) {CLUE_ERROR("CLUEContext was not initialized", 0)}
 //-----------------------------------------------------------------------------
 void CLUEContextCreateWithGPU()
 {
+	if (isInitialized) 
+	{
+	    CLUEContextDestroy();
+	}
+
+	isInitialized = false;
+
 	cl_platform_id platformID;
 
 	clGetPlatformIDs(1, &platformID, NULL);
@@ -26,12 +36,33 @@ void CLUEContextCreateWithGPU()
 
 	commands = clCreateCommandQueue(context, deviceID, 0, &err);	
 	CLUE_CHECK_CL_ERROR (err, "Could not create command queue.")
+
+	isInitialized = true;
 }
 //-----------------------------------------------------------------------------
 void CLUEContextDestroy()
 {
+	if (!isInitialized) 
+	{	    
+		return;
+	}
+
 	clReleaseCommandQueue(commands);
 	clReleaseContext(context);
 	//clReleaseDevice(deviceID);
+}
+//-----------------------------------------------------------------------------
+cl_context CLUEContextGetCLContext()
+{
+	CHECK_INITIALIZED
+
+	return context;
+}
+//-----------------------------------------------------------------------------
+cl_command_queue CLUEContextGetCLCommandQueue()
+{
+	CHECK_INITIALIZED
+
+	return commands;
 }
 //-----------------------------------------------------------------------------

@@ -46,9 +46,32 @@ include Src/CLUE/CMakeFiles/CLUE.dir/progress.make
 # Include the compile flags for this target's objects.
 include Src/CLUE/CMakeFiles/CLUE.dir/flags.make
 
+Src/CLUE/CMakeFiles/CLUE.dir/Memory.o: Src/CLUE/CMakeFiles/CLUE.dir/flags.make
+Src/CLUE/CMakeFiles/CLUE.dir/Memory.o: ../Src/CLUE/Memory.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/arno/Documents/CLUE/Build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Src/CLUE/CMakeFiles/CLUE.dir/Memory.o"
+	cd /home/arno/Documents/CLUE/Build/Src/CLUE && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CLUE.dir/Memory.o -c /home/arno/Documents/CLUE/Src/CLUE/Memory.cpp
+
+Src/CLUE/CMakeFiles/CLUE.dir/Memory.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CLUE.dir/Memory.i"
+	cd /home/arno/Documents/CLUE/Build/Src/CLUE && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/arno/Documents/CLUE/Src/CLUE/Memory.cpp > CMakeFiles/CLUE.dir/Memory.i
+
+Src/CLUE/CMakeFiles/CLUE.dir/Memory.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CLUE.dir/Memory.s"
+	cd /home/arno/Documents/CLUE/Build/Src/CLUE && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/arno/Documents/CLUE/Src/CLUE/Memory.cpp -o CMakeFiles/CLUE.dir/Memory.s
+
+Src/CLUE/CMakeFiles/CLUE.dir/Memory.o.requires:
+.PHONY : Src/CLUE/CMakeFiles/CLUE.dir/Memory.o.requires
+
+Src/CLUE/CMakeFiles/CLUE.dir/Memory.o.provides: Src/CLUE/CMakeFiles/CLUE.dir/Memory.o.requires
+	$(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Memory.o.provides.build
+.PHONY : Src/CLUE/CMakeFiles/CLUE.dir/Memory.o.provides
+
+Src/CLUE/CMakeFiles/CLUE.dir/Memory.o.provides.build: Src/CLUE/CMakeFiles/CLUE.dir/Memory.o
+
 Src/CLUE/CMakeFiles/CLUE.dir/Context.o: Src/CLUE/CMakeFiles/CLUE.dir/flags.make
 Src/CLUE/CMakeFiles/CLUE.dir/Context.o: ../Src/CLUE/Context.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/arno/Documents/CLUE/Build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/arno/Documents/CLUE/Build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Src/CLUE/CMakeFiles/CLUE.dir/Context.o"
 	cd /home/arno/Documents/CLUE/Build/Src/CLUE && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CLUE.dir/Context.o -c /home/arno/Documents/CLUE/Src/CLUE/Context.cpp
 
@@ -71,7 +94,7 @@ Src/CLUE/CMakeFiles/CLUE.dir/Context.o.provides.build: Src/CLUE/CMakeFiles/CLUE.
 
 Src/CLUE/CMakeFiles/CLUE.dir/Error.o: Src/CLUE/CMakeFiles/CLUE.dir/flags.make
 Src/CLUE/CMakeFiles/CLUE.dir/Error.o: ../Src/CLUE/Error.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/arno/Documents/CLUE/Build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/arno/Documents/CLUE/Build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Src/CLUE/CMakeFiles/CLUE.dir/Error.o"
 	cd /home/arno/Documents/CLUE/Build/Src/CLUE && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CLUE.dir/Error.o -c /home/arno/Documents/CLUE/Src/CLUE/Error.cpp
 
@@ -94,12 +117,14 @@ Src/CLUE/CMakeFiles/CLUE.dir/Error.o.provides.build: Src/CLUE/CMakeFiles/CLUE.di
 
 # Object files for target CLUE
 CLUE_OBJECTS = \
+"CMakeFiles/CLUE.dir/Memory.o" \
 "CMakeFiles/CLUE.dir/Context.o" \
 "CMakeFiles/CLUE.dir/Error.o"
 
 # External object files for target CLUE
 CLUE_EXTERNAL_OBJECTS =
 
+Src/CLUE/libCLUE.a: Src/CLUE/CMakeFiles/CLUE.dir/Memory.o
 Src/CLUE/libCLUE.a: Src/CLUE/CMakeFiles/CLUE.dir/Context.o
 Src/CLUE/libCLUE.a: Src/CLUE/CMakeFiles/CLUE.dir/Error.o
 Src/CLUE/libCLUE.a: Src/CLUE/CMakeFiles/CLUE.dir/build.make
@@ -112,6 +137,7 @@ Src/CLUE/libCLUE.a: Src/CLUE/CMakeFiles/CLUE.dir/link.txt
 Src/CLUE/CMakeFiles/CLUE.dir/build: Src/CLUE/libCLUE.a
 .PHONY : Src/CLUE/CMakeFiles/CLUE.dir/build
 
+Src/CLUE/CMakeFiles/CLUE.dir/requires: Src/CLUE/CMakeFiles/CLUE.dir/Memory.o.requires
 Src/CLUE/CMakeFiles/CLUE.dir/requires: Src/CLUE/CMakeFiles/CLUE.dir/Context.o.requires
 Src/CLUE/CMakeFiles/CLUE.dir/requires: Src/CLUE/CMakeFiles/CLUE.dir/Error.o.requires
 .PHONY : Src/CLUE/CMakeFiles/CLUE.dir/requires
