@@ -16,3 +16,9 @@ Src/CLUE/CMakeFiles/CLUE.dir/Memory.o: ../Src/CLUE/Error.h
 Src/CLUE/CMakeFiles/CLUE.dir/Memory.o: ../Src/CLUE/Memory.cpp
 Src/CLUE/CMakeFiles/CLUE.dir/Memory.o: ../Src/CLUE/Memory.h
 
+Src/CLUE/CMakeFiles/CLUE.dir/Program.o: ../Src/CLUE/Common.h
+Src/CLUE/CMakeFiles/CLUE.dir/Program.o: ../Src/CLUE/Context.h
+Src/CLUE/CMakeFiles/CLUE.dir/Program.o: ../Src/CLUE/Error.h
+Src/CLUE/CMakeFiles/CLUE.dir/Program.o: ../Src/CLUE/Program.cpp
+Src/CLUE/CMakeFiles/CLUE.dir/Program.o: ../Src/CLUE/Program.h
+

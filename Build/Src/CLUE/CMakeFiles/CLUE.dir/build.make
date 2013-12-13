@@ -115,11 +115,35 @@ Src/CLUE/CMakeFiles/CLUE.dir/Error.o.provides: Src/CLUE/CMakeFiles/CLUE.dir/Erro
 
 Src/CLUE/CMakeFiles/CLUE.dir/Error.o.provides.build: Src/CLUE/CMakeFiles/CLUE.dir/Error.o
 
+Src/CLUE/CMakeFiles/CLUE.dir/Program.o: Src/CLUE/CMakeFiles/CLUE.dir/flags.make
+Src/CLUE/CMakeFiles/CLUE.dir/Program.o: ../Src/CLUE/Program.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/arno/Documents/CLUE/Build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Src/CLUE/CMakeFiles/CLUE.dir/Program.o"
+	cd /home/arno/Documents/CLUE/Build/Src/CLUE && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CLUE.dir/Program.o -c /home/arno/Documents/CLUE/Src/CLUE/Program.cpp
+
+Src/CLUE/CMakeFiles/CLUE.dir/Program.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CLUE.dir/Program.i"
+	cd /home/arno/Documents/CLUE/Build/Src/CLUE && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/arno/Documents/CLUE/Src/CLUE/Program.cpp > CMakeFiles/CLUE.dir/Program.i
+
+Src/CLUE/CMakeFiles/CLUE.dir/Program.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CLUE.dir/Program.s"
+	cd /home/arno/Documents/CLUE/Build/Src/CLUE && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/arno/Documents/CLUE/Src/CLUE/Program.cpp -o CMakeFiles/CLUE.dir/Program.s
+
+Src/CLUE/CMakeFiles/CLUE.dir/Program.o.requires:
+.PHONY : Src/CLUE/CMakeFiles/CLUE.dir/Program.o.requires
+
+Src/CLUE/CMakeFiles/CLUE.dir/Program.o.provides: Src/CLUE/CMakeFiles/CLUE.dir/Program.o.requires
+	$(MAKE) -f Src/CLUE/CMakeFiles/CLUE.dir/build.make Src/CLUE/CMakeFiles/CLUE.dir/Program.o.provides.build
+.PHONY : Src/CLUE/CMakeFiles/CLUE.dir/Program.o.provides
+
+Src/CLUE/CMakeFiles/CLUE.dir/Program.o.provides.build: Src/CLUE/CMakeFiles/CLUE.dir/Program.o
+
 # Object files for target CLUE
 CLUE_OBJECTS = \
 "CMakeFiles/CLUE.dir/Memory.o" \
 "CMakeFiles/CLUE.dir/Context.o" \
-"CMakeFiles/CLUE.dir/Error.o"
+"CMakeFiles/CLUE.dir/Error.o" \
+"CMakeFiles/CLUE.dir/Program.o"
 
 # External object files for target CLUE
 CLUE_EXTERNAL_OBJECTS =
@@ -127,6 +151,7 @@ CLUE_EXTERNAL_OBJECTS =
 Src/CLUE/libCLUE.a: Src/CLUE/CMakeFiles/CLUE.dir/Memory.o
 Src/CLUE/libCLUE.a: Src/CLUE/CMakeFiles/CLUE.dir/Context.o
 Src/CLUE/libCLUE.a: Src/CLUE/CMakeFiles/CLUE.dir/Error.o
+Src/CLUE/libCLUE.a: Src/CLUE/CMakeFiles/CLUE.dir/Program.o
 Src/CLUE/libCLUE.a: Src/CLUE/CMakeFiles/CLUE.dir/build.make
 Src/CLUE/libCLUE.a: Src/CLUE/CMakeFiles/CLUE.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library libCLUE.a"
@@ -140,6 +165,7 @@ Src/CLUE/CMakeFiles/CLUE.dir/build: Src/CLUE/libCLUE.a
 Src/CLUE/CMakeFiles/CLUE.dir/requires: Src/CLUE/CMakeFiles/CLUE.dir/Memory.o.requires
 Src/CLUE/CMakeFiles/CLUE.dir/requires: Src/CLUE/CMakeFiles/CLUE.dir/Context.o.requires
 Src/CLUE/CMakeFiles/CLUE.dir/requires: Src/CLUE/CMakeFiles/CLUE.dir/Error.o.requires
+Src/CLUE/CMakeFiles/CLUE.dir/requires: Src/CLUE/CMakeFiles/CLUE.dir/Program.o.requires
 .PHONY : Src/CLUE/CMakeFiles/CLUE.dir/requires
 
 Src/CLUE/CMakeFiles/CLUE.dir/clean:

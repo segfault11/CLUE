@@ -2,6 +2,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/CLUE.dir/Memory.o"
   "CMakeFiles/CLUE.dir/Context.o"
   "CMakeFiles/CLUE.dir/Error.o"
+  "CMakeFiles/CLUE.dir/Program.o"
   "libCLUE.pdb"
   "libCLUE.a"
 )

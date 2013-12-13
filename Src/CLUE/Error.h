@@ -6,10 +6,10 @@
 #define CLUE_CHECK_CL_ERROR(err, msg)  \
 	if (err != CL_SUCCESS)             \
 	{ 								   \
-		CLUE_ERROR( msg, err )	       \
+		CLUE_ERROR(err, msg)	       \
 	}  								   
 
-#define CLUE_ERROR(msg, code) CLUEErrorReport(__FILE__, __FUNCTION__, __LINE__, msg, code);
+#define CLUE_ERROR(code, msg) CLUEErrorReport(__FILE__, __FUNCTION__, __LINE__, msg, code);
 
 void CLUEErrorReport(
 	const char* file, 

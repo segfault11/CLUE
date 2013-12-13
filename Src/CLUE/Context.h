@@ -13,6 +13,9 @@ cl_context CLUEContextGetCLContext();
 /// Gets the cl command queue that was created along with the CLUE context.
 cl_command_queue CLUEContextGetCLCommandQueue();
 
+/// Gets the device assciated with the CLUE context.
+cl_device_id CLUEContextGetDevice();
+
 /// Destroys the CLUE context.
 void CLUEContextDestroy();
 

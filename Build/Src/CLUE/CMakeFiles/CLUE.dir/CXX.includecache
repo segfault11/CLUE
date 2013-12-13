@@ -20,15 +20,15 @@ Common.h
 Common.h
 /home/arno/Documents/CLUE/Src/CLUE/Common.h
 
-/home/arno/Documents/CLUE/Src/CLUE/Memory.cpp
-Memory.h
-/home/arno/Documents/CLUE/Src/CLUE/Memory.h
-Error.h
-/home/arno/Documents/CLUE/Src/CLUE/Error.h
+/home/arno/Documents/CLUE/Src/CLUE/Program.cpp
+Program.h
+/home/arno/Documents/CLUE/Src/CLUE/Program.h
 Context.h
 /home/arno/Documents/CLUE/Src/CLUE/Context.h
+Error.h
+/home/arno/Documents/CLUE/Src/CLUE/Error.h
 
-/home/arno/Documents/CLUE/Src/CLUE/Memory.h
+/home/arno/Documents/CLUE/Src/CLUE/Program.h
 Common.h
 /home/arno/Documents/CLUE/Src/CLUE/Common.h
 

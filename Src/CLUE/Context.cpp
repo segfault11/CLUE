@@ -7,7 +7,7 @@ static cl_context context;
 static cl_command_queue commands;
 static bool isInitialized = false;
 //-----------------------------------------------------------------------------
-#define CHECK_INITIALIZED if (!isInitialized) {CLUE_ERROR("CLUEContext was not initialized", 0)}
+#define CHECK_INITIALIZED if (!isInitialized) {CLUE_ERROR(0, "CLUEContext was not initialized")}
 //-----------------------------------------------------------------------------
 void CLUEContextCreateWithGPU()
 {
@@ -64,5 +64,12 @@ cl_command_queue CLUEContextGetCLCommandQueue()
 	CHECK_INITIALIZED
 
 	return commands;
+}
+//-----------------------------------------------------------------------------
+cl_device_id CLUEContextGetDevice()
+{
+	CHECK_INITIALIZED
+
+	return deviceID;
 }
 //-----------------------------------------------------------------------------
