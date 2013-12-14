@@ -73,7 +73,6 @@ void CLUEKernelSetArgument(
 )
 {
 	cl_int err;
-
 	err = clSetKernelArg(kernel, argIndex, size,  argValue);
 	CLUE_CHECK_CL_ERROR(err, "Could not set kernel argument");
 }
@@ -85,17 +84,18 @@ void CLUEKernelEnqueue(
 	const size_t* localWorkSize
 )
 {
-	clEnqueueNDRangeKernel(
-		CLUEContextGetCLCommandQueue(),
-		kernel,
-		workDim,
-		NULL,
-		globalWorkSize,
-		localWorkSize,
-		0, 
-		NULL, 
-		NULL
-	);
+	cl_int err = clEnqueueNDRangeKernel(
+    		CLUEContextGetCLCommandQueue(),
+    		kernel,
+    		workDim,
+    		NULL,
+    		globalWorkSize,
+    		localWorkSize,
+    		0, 
+    		NULL, 
+    		NULL
+    	);
+    CLUE_CHECK_CL_ERROR(err, "Kernel execution failed.");
 }
 //-----------------------------------------------------------------------------
 size_t CLUEKernelGetWorkGroupSize(cl_kernel kernel)

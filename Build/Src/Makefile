@@ -36,10 +36,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/arno/Documents/CLUE
+CMAKE_SOURCE_DIR = /home/scttbrn/Documents/CLUE
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/arno/Documents/CLUE/Build
+CMAKE_BINARY_DIR = /home/scttbrn/Documents/CLUE/Build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -107,14 +107,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/arno/Documents/CLUE/Build && $(CMAKE_COMMAND) -E cmake_progress_start /home/arno/Documents/CLUE/Build/CMakeFiles /home/arno/Documents/CLUE/Build/Src/CMakeFiles/progress.marks
-	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f CMakeFiles/Makefile2 Src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/arno/Documents/CLUE/Build/CMakeFiles 0
+	cd /home/scttbrn/Documents/CLUE/Build && $(CMAKE_COMMAND) -E cmake_progress_start /home/scttbrn/Documents/CLUE/Build/CMakeFiles /home/scttbrn/Documents/CLUE/Build/Src/CMakeFiles/progress.marks
+	cd /home/scttbrn/Documents/CLUE/Build && $(MAKE) -f CMakeFiles/Makefile2 Src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/scttbrn/Documents/CLUE/Build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f CMakeFiles/Makefile2 Src/clean
+	cd /home/scttbrn/Documents/CLUE/Build && $(MAKE) -f CMakeFiles/Makefile2 Src/clean
 .PHONY : clean
 
 # The main clean target
@@ -123,17 +123,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f CMakeFiles/Makefile2 Src/preinstall
+	cd /home/scttbrn/Documents/CLUE/Build && $(MAKE) -f CMakeFiles/Makefile2 Src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/arno/Documents/CLUE/Build && $(MAKE) -f CMakeFiles/Makefile2 Src/preinstall
+	cd /home/scttbrn/Documents/CLUE/Build && $(MAKE) -f CMakeFiles/Makefile2 Src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/arno/Documents/CLUE/Build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/scttbrn/Documents/CLUE/Build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -159,6 +159,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/arno/Documents/CLUE/Build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/scttbrn/Documents/CLUE/Build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

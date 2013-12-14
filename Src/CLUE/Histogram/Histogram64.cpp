@@ -48,10 +48,17 @@ CLUEHistogram64::CLUEHistogram64()
 		isProgInitialized = true;
 	}
 
+    unsigned int d[64];
+
+    for (unsigned int i = 0; i < 64; i++) 
+    {
+        d[i] = 0;
+    }
+
 	this->histogram = CLUEMemoryCreate(
-			CL_MEM_READ_WRITE,
+			CL_MEM_READ_WRITE | CL_MEM_COPY_HOST_PTR,
 			sizeof(unsigned int)*64, 
-			NULL
+			d
 		);
 
 }
@@ -69,10 +76,15 @@ CLUEHistogram64::~CLUEHistogram64()
 //-----------------------------------------------------------------------------
 void CLUEHistogram64::Compute(cl_mem data, size_t numData)
 {
+    size_t global = numData % local == 0 ? numData : (numData/local + 1)*local;
+    
 	CLUEKernelSetArgument(kernel, 0, sizeof(cl_mem), &this->histogram);
 	CLUEKernelSetArgument(kernel, 1, sizeof(cl_mem), &data);
 	CLUEKernelSetArgument(kernel, 2, sizeof(unsigned int), &numData);
-	CLUEKernelEnqueue(kernel, 1, &numData, &local); 
+	CLUEKernelEnqueue(kernel, 1, &global, &local); 
+
+    std::cout << "local " << local << std::endl;
+    std::cout << "global " << numData << std::endl;
 }
 //-----------------------------------------------------------------------------
 void CLUEHistogram64::Dump() const

@@ -8,6 +8,7 @@ Src/CLUE/CMakeFiles/CLUE.dir/Core/Context.o: ../Src/CLUE/Core/Common.h
 Src/CLUE/CMakeFiles/CLUE.dir/Core/Context.o: ../Src/CLUE/Core/Context.cpp
 Src/CLUE/CMakeFiles/CLUE.dir/Core/Context.o: ../Src/CLUE/Core/Context.h
 Src/CLUE/CMakeFiles/CLUE.dir/Core/Context.o: ../Src/CLUE/Core/Error.h
+Src/CLUE/CMakeFiles/CLUE.dir/Core/Context.o: ../Src/CLUE/Core/Program.h
 
 Src/CLUE/CMakeFiles/CLUE.dir/Core/Error.o: ../Src/CLUE/Core/Common.h
 Src/CLUE/CMakeFiles/CLUE.dir/Core/Error.o: ../Src/CLUE/Core/Error.cpp
@@ -18,6 +19,7 @@ Src/CLUE/CMakeFiles/CLUE.dir/Core/Memory.o: ../Src/CLUE/Core/Context.h
 Src/CLUE/CMakeFiles/CLUE.dir/Core/Memory.o: ../Src/CLUE/Core/Error.h
 Src/CLUE/CMakeFiles/CLUE.dir/Core/Memory.o: ../Src/CLUE/Core/Memory.cpp
 Src/CLUE/CMakeFiles/CLUE.dir/Core/Memory.o: ../Src/CLUE/Core/Memory.h
+Src/CLUE/CMakeFiles/CLUE.dir/Core/Memory.o: ../Src/CLUE/Core/Program.h
 
 Src/CLUE/CMakeFiles/CLUE.dir/Core/Program.o: ../Src/CLUE/Core/Common.h
 Src/CLUE/CMakeFiles/CLUE.dir/Core/Program.o: ../Src/CLUE/Core/Context.h

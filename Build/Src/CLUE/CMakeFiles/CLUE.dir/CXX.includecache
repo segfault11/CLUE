@@ -6,25 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/home/arno/Documents/CLUE/Src/CLUE/Core/Common.h
+/home/scttbrn/Documents/CLUE/Src/CLUE/Core/Common.h
 CL/cl.h
 -
 string
 -
 
-/home/arno/Documents/CLUE/Src/CLUE/Core/Context.cpp
+/home/scttbrn/Documents/CLUE/Src/CLUE/Core/Context.cpp
 iostream
 -
 Context.h
-/home/arno/Documents/CLUE/Src/CLUE/Core/Context.h
+/home/scttbrn/Documents/CLUE/Src/CLUE/Core/Context.h
 Error.h
-/home/arno/Documents/CLUE/Src/CLUE/Core/Error.h
+/home/scttbrn/Documents/CLUE/Src/CLUE/Core/Error.h
+Program.h
+/home/scttbrn/Documents/CLUE/Src/CLUE/Core/Program.h
 
-/home/arno/Documents/CLUE/Src/CLUE/Core/Context.h
+/home/scttbrn/Documents/CLUE/Src/CLUE/Core/Context.h
 Common.h
-/home/arno/Documents/CLUE/Src/CLUE/Core/Common.h
+/home/scttbrn/Documents/CLUE/Src/CLUE/Core/Common.h
 
-/home/arno/Documents/CLUE/Src/CLUE/Core/Error.h
+/home/scttbrn/Documents/CLUE/Src/CLUE/Core/Error.h
 Common.h
-/home/arno/Documents/CLUE/Src/CLUE/Core/Common.h
+/home/scttbrn/Documents/CLUE/Src/CLUE/Core/Common.h
+
+/home/scttbrn/Documents/CLUE/Src/CLUE/Core/Program.h
+Common.h
+/home/scttbrn/Documents/CLUE/Src/CLUE/Core/Common.h
 

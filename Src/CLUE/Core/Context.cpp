@@ -2,11 +2,31 @@
 #include <iostream>
 #include "Context.h"
 #include "Error.h"
+#include "Program.h"
+//-----------------------------------------------------------------------------
+#define TO_STRING(x) #x
+//-----------------------------------------------------------------------------
+static const char* setZeroKernel =
+TO_STRING(
+    __kernel void setZero(__global int* data, uint numData)
+    {
+        int id = get_global_id(0);
+
+        if (id >= numData) 
+        {
+            return;
+        }
+
+        data[id] = 0;
+    }
+);
 //-----------------------------------------------------------------------------
 static cl_device_id deviceID;
 static cl_context context;
 static cl_command_queue commands;
 static bool isInitialized = false;
+static cl_program program;
+cl_kernel zeroKernel;
 //-----------------------------------------------------------------------------
 #define CHECK_INITIALIZED if (!isInitialized) {CLUE_ERROR(0, "CLUEContext was not initialized")}
 //-----------------------------------------------------------------------------
@@ -40,6 +60,9 @@ void CLUEContextCreateWithGPU()
 	CLUE_CHECK_CL_ERROR (err, "Could not create command queue.")
 
 	isInitialized = true;
+
+    program = CLUEProgramCreateWithSource(1, &setZeroKernel);
+    zeroKernel = CLUEKernelCreate(program, "setZero");
 }
 //-----------------------------------------------------------------------------
 void CLUEContextDestroy()
@@ -52,6 +75,8 @@ void CLUEContextDestroy()
 	clReleaseCommandQueue(commands);
 	clReleaseContext(context);
 	//clReleaseDevice(deviceID);
+    CLUEKernelDestroy(zeroKernel);
+    CLUEProgramDestroy(program);
 }
 //-----------------------------------------------------------------------------
 cl_context CLUEContextGetCLContext()
@@ -80,11 +105,22 @@ void CLUEContextDump()
 	CHECK_INITIALIZED
 
 	char name[1024];
+    size_t size;
 
 	clGetDeviceInfo(deviceID, CL_DEVICE_NAME, sizeof(name), name, NULL);
 	std::cout << "CL_DEVICE_NAME: " << name << std::endl;
 	clGetDeviceInfo(deviceID, CL_DEVICE_VERSION, sizeof(name), name, NULL);
 	std::cout << "CL_DEVICE_VERSION: " << name << std::endl;
+
+    clGetDeviceInfo(
+        deviceID, 
+        CL_DEVICE_MAX_WORK_GROUP_SIZE, 
+        sizeof(size), 
+        &size, 
+        NULL
+    );
+
+    std::cout << "CL_DEVICE_MAX_WORK_GROUP_SIZE: " << size << std::endl; 
 }
 //-----------------------------------------------------------------------------
 
