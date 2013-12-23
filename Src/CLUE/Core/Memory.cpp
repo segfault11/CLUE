@@ -53,7 +53,7 @@ void CLUEMemorySetZero(cl_mem mem, size_t size)
 
     CLUEKernelSetArgument(zeroKernel, 0, sizeof(cl_mem), &mem);  
     CLUEKernelSetArgument(zeroKernel, 1, sizeof(unsigned int), &numData);  
-    CLUEKernelEnqueue(zeroKernel, 1, &local, & global);
+    CLUEKernelEnqueue(zeroKernel, 1, &global, &local);
 }
 //-----------------------------------------------------------------------------
 void CLUEMemoryMemset(cl_mem mem, cl_char value, size_t size)

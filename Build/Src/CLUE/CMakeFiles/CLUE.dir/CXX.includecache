@@ -12,21 +12,25 @@ CL/cl.h
 string
 -
 
-/home/scttbrn/Documents/CLUE/Src/CLUE/Core/Context.cpp
-iostream
--
-Context.h
-/home/scttbrn/Documents/CLUE/Src/CLUE/Core/Context.h
-Error.h
-/home/scttbrn/Documents/CLUE/Src/CLUE/Core/Error.h
-Program.h
-/home/scttbrn/Documents/CLUE/Src/CLUE/Core/Program.h
-
 /home/scttbrn/Documents/CLUE/Src/CLUE/Core/Context.h
 Common.h
 /home/scttbrn/Documents/CLUE/Src/CLUE/Core/Common.h
 
 /home/scttbrn/Documents/CLUE/Src/CLUE/Core/Error.h
+Common.h
+/home/scttbrn/Documents/CLUE/Src/CLUE/Core/Common.h
+
+/home/scttbrn/Documents/CLUE/Src/CLUE/Core/Memory.cpp
+Memory.h
+/home/scttbrn/Documents/CLUE/Src/CLUE/Core/Memory.h
+Error.h
+/home/scttbrn/Documents/CLUE/Src/CLUE/Core/Error.h
+Context.h
+/home/scttbrn/Documents/CLUE/Src/CLUE/Core/Context.h
+Program.h
+/home/scttbrn/Documents/CLUE/Src/CLUE/Core/Program.h
+
+/home/scttbrn/Documents/CLUE/Src/CLUE/Core/Memory.h
 Common.h
 /home/scttbrn/Documents/CLUE/Src/CLUE/Core/Common.h
 

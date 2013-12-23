@@ -77,7 +77,8 @@ CLUEHistogram64::~CLUEHistogram64()
 void CLUEHistogram64::Compute(cl_mem data, size_t numData)
 {
     size_t global = numData % local == 0 ? numData : (numData/local + 1)*local;
-    
+
+    CLUEMemorySetZero(this->histogram, sizeof(unsigned int)*64);    
 	CLUEKernelSetArgument(kernel, 0, sizeof(cl_mem), &this->histogram);
 	CLUEKernelSetArgument(kernel, 1, sizeof(cl_mem), &data);
 	CLUEKernelSetArgument(kernel, 2, sizeof(unsigned int), &numData);
